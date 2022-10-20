@@ -1,16 +1,16 @@
 @font-face {
   font-family: Agrandir;
-  src: url("static/font/Agrandir-Grand.otf");
+  src: url("public/font/Agrandir-Grand.otf");
 }
 
 @font-face {
   font-family: Agrandir Black;
-  src: url("static/font/Agrandir-GrandBlack.otf");
+  src: url("public/font/Agrandir-GrandBlack.otf");
 }
 
 @font-face {
   font-family: Argandir Medium;
-  src: url("static/font/Agrandir-GrandMedium.otf");
+  src: url("public/font/Agrandir-GrandMedium.otf");
 }
 
 :root {
