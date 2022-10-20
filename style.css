@@ -1,0 +1,439 @@
+@font-face {
+  font-family: Agrandir;
+  src: url("/static/font/Agrandir-Grand.otf");
+}
+
+@font-face {
+  font-family: Agrandir Black;
+  src: url("/static/font/Agrandir-GrandBlack.otf");
+}
+
+@font-face {
+  font-family: Argandir Medium;
+  src: url("/static/font/Agrandir-GrandMedium.otf");
+}
+
+:root {
+  --dark-blue: #001d6e;
+  --red: #df0700;
+  --skin: #fee2c5;
+  --blue: #c4ddff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Agrandir, Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Agrandir Black, Roboto, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.parent {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.parent .child {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 5%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#welcome,
+#skills,
+#skills_fe,
+#skills_be,
+#skills_mb {
+  background-color: var(--skin);
+}
+
+#about,
+#about_desc,
+#about_card {
+  background-color: var(--dark-blue);
+}
+#projects,
+#projects_kblog,
+#projects_more,
+#contact {
+  background-color: var(--blue);
+}
+#thank {
+  background-color: var(--red);
+}
+
+#welcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#welcome h1 {
+  font-size: 4em;
+  color: var(--dark-blue);
+  max-width: 800px;
+}
+
+#welcome img {
+  position: absolute;
+  z-index: 0;
+}
+
+#welcome #multi_arrow {
+  width: 40%;
+  top: 2rem;
+}
+
+#welcome #laptop {
+  width: 20%;
+  bottom: 3em;
+}
+
+#welcome #bagsmiling {
+  width: 30%;
+  right: 3em;
+  top: 5em;
+}
+
+#welcome > div {
+  position: absolute;
+  bottom: 3em;
+  right: 5%;
+}
+
+#welcome div a {
+  text-decoration: none;
+}
+
+#welcome div a h2 {
+  color: var(--red);
+  padding: 1.5rem 0;
+}
+
+#welcome div img {
+  width: 80%;
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  rotate: 45deg;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#about div h2 {
+  font-size: 5rem;
+  color: var(--skin);
+}
+
+.low_opacity {
+  opacity: 0.27;
+}
+
+#about_desc {
+  color: var(--skin);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about_desc div h2 {
+  font-size: 4em;
+}
+#about_desc div p {
+  font-size: 2.5em;
+  text-align: justify;
+}
+
+#about_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about_card > div {
+  width: 600px;
+}
+
+#about_card > div > div {
+  background-color: var(--skin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-blue);
+  padding: 0.3rem 2rem;
+  border-radius: 2rem;
+}
+
+#about_card > div > div span {
+  font-family: Argandir Medium;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#about_card > div > div .dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#about_card > div > div .dots .dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+}
+
+#about_card > div > section {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#about_card > div > section > .cover > img {
+  width: 200px;
+  height: max-content;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 2rem;
+  border: 2px solid var(--skin);
+}
+
+#about_card > div > section #card_details {
+  margin-left: 1rem;
+  color: var(--skin);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 4em;
+  color: var(--red);
+}
+
+#skills div h2 {
+  font-size: 6rem;
+}
+
+#skills_fe,
+#skills_be,
+#skills_mb {
+  display: flex;
+  gap: 2rem;
+}
+
+.child > ._img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.child > ._desc {
+  display: flex;
+  align-items: center;
+}
+.child > ._desc > div > h1 {
+  font-size: 4em;
+  color: var(--red);
+}
+.child > ._desc > div > p {
+  font-size: 2em;
+  color: var(--red);
+  text-align: justify;
+}
+.child > ._img > img:first-child {
+  width: 200px;
+}
+
+.child > ._img > img:last-child {
+  width: 400px;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects > h1 {
+  font-size: 4em;
+  color: var(--dark-blue);
+}
+
+#projects_kblog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects_kblog > div {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+#projects_kblog > div > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#projects_kblog > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#projects_kblog > div > div > h1 {
+  font-size: 3em;
+  color: var(--dark-blue);
+  margin-bottom: 0;
+}
+
+#projects_kblog > p {
+  font-size: 2em;
+  text-align: justify;
+  color: var(--dark-blue);
+}
+
+#projects_more {
+  color: var(--dark-blue);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#projects_more > div > h1 {
+  max-width: 800px;
+  font-size: 3em;
+}
+
+#projects_more > div > p {
+  font-size: 2em;
+}
+
+#projects_more > div > div > a {
+  text-decoration: none;
+}
+
+#projects_more > div > div > a:visited {
+  color: var(--dark-blue);
+}
+
+#projects_more > div > div > a:active {
+  color: var(--dark-blue);
+}
+
+#projects_more > div > div > a > h2 {
+  padding: 1.5rem 0;
+}
+
+#projects_more > div > div {
+  position: absolute;
+  bottom: 3em;
+  right: 5%;
+}
+
+#projects_more > div > img {
+  position: absolute;
+  right: 5%;
+  top: 5em;
+  width: 35%;
+}
+
+#projects_more > div > div > img {
+  position: absolute;
+  rotate: 45deg;
+  width: 70%;
+  top: -150%;
+  left: -50%;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+}
+
+#contact > div > h1 {
+  font-size: 3em;
+  color: var(--dark-blue);
+}
+#contact > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#contact > div > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#contact > div > div > div > label > input {
+  width: 600px;
+}
+
+#contact > div > div > div > div .bi {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#contact > div > div > div > div > a {
+  text-decoration: none;
+}
+
+#contact > div > div > div > div > a:visited {
+  color: #001d6e;
+}
+
+#thank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thank > h1 {
+  font-size: 3em;
+  color: var(--skin);
+}
