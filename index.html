@@ -30,19 +30,19 @@
           alt="Boy and girl smiling"
           id="bagsmiling"
         />
-        <h1>Welcome to my portfolio</h1>
+        <h1 class="animate">Welcome to my portfolio</h1>
         <div>
           <img src="public/assets/Arrow.svg" alt="Arrow" />
-          <a href="#about"><h2>Let's Explore!</h2></a>
+          <a href="#about"><h2 class="animate">Let's Explore!</h2></a>
         </div>
       </div>
       <div class="child" id="about">
-        <div class="normal">
+        <div class="normal reveal">
           <h2>ABOUT</h2>
           <h2>ABOUT</h2>
           <h2>ABOUT</h2>
         </div>
-        <div class="low_opacity">
+        <div class="low_opacity reveal">
           <h2>ABOUT</h2>
           <h2>ABOUT</h2>
           <h2>ABOUT</h2>
@@ -50,8 +50,13 @@
       </div>
       <div class="child" id="about_desc">
         <div>
-          <h2>Hi, I am tuankietcoder</h2>
-          <p>
+          <h2 class="reveal">
+            Hi, I am
+            <span id="break" style="font-family: Agrandir Black"
+              >tuankietcoder</span
+            >
+          </h2>
+          <p class="reveal_more">
             I feel curious about everything. So I like to explore everything
             around me. Sometimes, I break machines like computers, phones, and
             electric toys to see what's inside them. So I also learned a lot
@@ -71,10 +76,10 @@
             </div>
           </div>
           <section>
-            <div class="cover">
+            <div class="cover reveal_more">
               <img src="public/assets/tuankietcoder.jpg" alt="tuankietcoder" />
             </div>
-            <div id="card_details">
+            <div id="card_details" class="reveal">
               <p><b>Name</b><br />Tuan Kiet Tran</p>
               <p><b>Birthday</b><br />02/2003</p>
               <p><b>Level</b><br />Student</p>
@@ -85,12 +90,12 @@
         </div>
       </div>
       <div class="child" id="skills">
-        <div class="normal">
+        <div class="normal reveal">
           <h2>SKILLS</h2>
           <h2>SKILLS</h2>
           <h2>SKILLS</h2>
         </div>
-        <div class="low_opacity">
+        <div class="low_opacity reveal">
           <h2>SKILLS</h2>
           <h2>SKILLS</h2>
           <h2>SKILLS</h2>
@@ -99,12 +104,16 @@
       <div class="child" id="skills_fe">
         <div class="_img">
           <img src="public/assets/RedTripleHexa.svg" alt="Red triple hexagon" />
-          <img src="public/assets/GirlDrawing.svg" alt="Girl Drawing" />
+          <img
+            src="public/assets/GirlDrawing.svg"
+            alt="Girl Drawing"
+            class="reveal_more"
+          />
         </div>
         <div class="_desc">
           <div>
-            <h1>Front-end Web development</h1>
-            <p>
+            <h1 class="reveal">Front-end Web development</h1>
+            <p class="reveal">
               I use my coding skills to implement a website not only a good look
               for user but also a good experience
             </p>
@@ -114,10 +123,14 @@
       <div class="child" id="skills_be">
         <div class="_img">
           <img src="public/assets/RedTripleHexa.svg" alt="Red triple hexagon" />
-          <img src="public/assets/ManGuard.svg" alt="Man guard" />
+          <img
+            src="public/assets/ManGuard.svg"
+            alt="Man guard"
+            class="reveal_more"
+          />
         </div>
         <div class="_desc">
-          <div>
+          <div class="reveal">
             <h1>Back-end Web development</h1>
             <p>
               To supply data for website and user forward to what user can see,
@@ -130,10 +143,14 @@
       <div class="child" id="skills_mb">
         <div class="_img">
           <img src="public/assets/RedTripleHexa.svg" alt="Red triple hexagon" />
-          <img src="public/assets/iphone.svg" alt="iphone" />
+          <img
+            src="public/assets/iphone.svg"
+            alt="iphone"
+            class="reveal_more"
+          />
         </div>
         <div class="_desc">
-          <div>
+          <div class="reveal">
             <h1>Mobile development</h1>
             <p>
               I create software for android and ios using javascript and Flutter
@@ -143,18 +160,18 @@
         </div>
       </div>
       <div class="child" id="projects">
-        <img src="public/assets/Box.svg" alt="Box" />
-        <h1>PROJECTS</h1>
+        <img src="public/assets/Box.svg" alt="Box" class="reveal_more" />
+        <h1 class="reveal">PROJECTS</h1>
       </div>
       <div class="child" id="projects_kblog">
         <div>
-          <img src="public/assets/KBlog.webp" alt="KBlog" />
+          <img src="public/assets/KBlog.webp" alt="KBlog" class="reveal_more" />
           <div>
             <img src="public/assets/ManBlog.svg" alt="Man Blog" />
-            <h1>BLOG</h1>
+            <h1 id="blog_title">BLOG</h1>
           </div>
         </div>
-        <p>
+        <p class="reveal">
           K Blog website was created with the purpose of saving my programming
           knowledge as well as sharing it with everyone. In addition, the page
           also helps you to discuss more about programming, about computers...
@@ -162,11 +179,11 @@
       </div>
       <div class="child" id="projects_more">
         <div>
-          <h1>Want to explore more my projects?</h1>
-          <p>Feel free to contact me!</p>
+          <h1 class="reveal_more">Want to explore more my projects?</h1>
+          <p class="reveal_more">Feel free to contact me!</p>
           <div>
             <img src="public/assets/Arrow.svg" alt="Arrow" />
-            <a href="#contact"><h2>Let's contact!</h2></a>
+            <a href="#contact" class="contact"><h2>Let's contact!</h2></a>
           </div>
           <img src="public/assets/ContactPeople.svg" alt="Contact" />
         </div>
@@ -175,14 +192,26 @@
         <div>
           <h1>Contact</h1>
           <div>
-            <img src="public/assets/ContactList.svg" alt="Contact list" />
             <div>
-              <label for="email">
+              <img
+                src="public/assets/ContactList.svg"
+                alt="Contact list"
+                class="reveal_more"
+              />
+            </div>
+            <div>
+              <label for="email" class="reveal">
                 <div>Email</div>
-                <input type="email" id="email" name="email" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@example.com"
+                />
               </label>
-              <p>or</p>
-              <div>
+              <button id="submit_email" class="reveal">Submit</button>
+              <p class="reveal">or</p>
+              <div class="reveal_more">
                 <a
                   href="https://www.linkedin.com/in/tuankietcoder/"
                   target="_blank"
@@ -204,9 +233,13 @@
         </div>
       </div>
       <div class="child" id="thank">
-        <h1>Thank you</h1>
+        <h1 class="reveal">Thank you!</h1>
+      </div>
+      <div class="child" id="creator">
+        <h3>© 2022</h3>
+        <h1>This website is created by tuankietcoder</h1>
       </div>
     </section>
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
