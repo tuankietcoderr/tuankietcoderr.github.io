@@ -29,3 +29,9 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal, { capture: true });
+
+const submit = document.getElementById("submit");
+
+submit.addEventListener("click", async (e) => {
+  e.preventDefault();
+});
